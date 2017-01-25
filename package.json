@@ -1,0 +1,25 @@
+{
+  "name": "day9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "express.js",
+  "scripts": {
+    "start": "node express.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArielEis/day9.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArielEis/day9/issues"
+  },
+  "homepage": "https://github.com/ArielEis/day9#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "open": "0.0.5",
+    "path": "^0.12.7"
+  }
+}

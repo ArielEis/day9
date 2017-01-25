@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <title>Form</title>
+
+</head>
+<body>
+
+<div align="center"><h1>HTML Forms</h1></div>
+<h2> <ul><li>Lest's put it all together:</li></ul></h2>
+<form name="form" method="post" action="insertIntoDB.php" style="background-color: lightyellow; width: 380px; border-style: solid;">
+    <table width="100%" height ="100%" cellspacing="10px">
+        <tr><td width="90%">Full Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="full_name" value="Ronaldo" style = "border: 5px solid white; -webkit-box-shadow: inset 0 0 8px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1); -moz-box-shadow: inset 0 0 8px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1); box-shadow: inset 0 0 8px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1); padding: 5px;background: rgba(255,255,255,0.4);margin: 0 0 5px 0;"></td></tr>
+        <tr><td width="90%">Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="pass" value="1234" style = "border: 5px solid white; -webkit-box-shadow: inset 0 0 8px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1); -moz-box-shadow: inset 0 0 8px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1); box-shadow: inset 0 0 8px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1); padding: 5px;background: rgba(255,255,255,0.4);margin: 0 0 5px 0;"></td></tr>
+        <tr><td width="90%">Country:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="country" style = "border: 5px solid white; -webkit-box-shadow: inset 0 0 8px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1); -moz-box-shadow: inset 0 0 8px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1); box-shadow: inset 0 0 8px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1); padding: 5px;background: rgba(255,255,255,0.4);margin: 0 0 5px 0;">
+                <option >China</option>
+                <option>Israel</option>
+                <option>Italy</option>
+                <option>Usa</option>
+            </select>
+        </td></tr>
+        <tr><td><table>
+            <tr><td><input type="radio" name="gender" value="male"> I am a male</td></tr>
+            <tr><td><input type="radio" name="gender" value="female"> I am a female</td></tr>
+        </table></td></tr>
+        <tr><td>
+            <fieldset style="width:300px">
+                <legend>Pet policy:</legend>
+                <table><tr><td><input type="checkbox" name="dog">I have a dog</td></tr>
+                    <tr><td><input type="checkbox" name="cat" checked>I have a cat</td></tr></table>
+            </fieldset>
+        </td></tr>
+        <tr><td>
+            Some words about me: <textarea name="some_words" rows="4" cols="22" style = "border: 5px solid white; -webkit-box-shadow: inset 0 0 8px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1); -moz-box-shadow: inset 0 0 8px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1); box-shadow: inset 0 0 8px  rgba(0,0,0,0.1),0 0 16px rgba(0,0,0,0.1); padding: 5px;background: rgba(255,255,255,0.4);margin: 0 0 5px 0;">
+I am interested in...
+            </textarea>
+        </td></tr>
+        <tr><td><input type="submit" id="submitButton" value="Send to Server" style="border: 3px double #FC6; border-top-color: #FC9; border-left-color: #FC9; background-color: snow"></td></tr>
+    </table>
+</form>
+
+
+</body>
+</html>
