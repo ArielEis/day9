@@ -7,6 +7,8 @@ const open = require('open');
 const path = require('path');
 var app = express();
 
+app.use('/', express.static(_dirname));
+
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname +'/index.html'));
     console.log('Someone was logging!');
